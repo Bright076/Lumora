@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lumora – Skin · Beauty · You</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Caveat:wght@500;600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= TOP BAR ================= -->
+<div class="topbar">
+  <div class="container">
+    <div class="left">
+      <span>
+        <svg viewBox="0 0 24 24"><path d="M2 7h11v9H2zM13 10h5l3 3v3h-8z"/><circle cx="6" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></svg>
+        Free shipping on orders over $50
+      </span>
+      <span class="sep"></span>
+      <span>15% OFF your first order – Use code: NEWYOU</span>
+    </div>
+    <div class="right">
+      <a href="#"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M9 10a3 3 0 1 1 4 2.8c-.7.3-1 .8-1 1.5M12 16.5v.5"/></svg>Help</a>
+      <span class="sep"></span>
+      <a href="#">Track Order</a>
+      <button><span class="flag"></span>USD <svg viewBox="0 0 24 24" style="width:10px;height:10px"><path d="m6 9 6 6 6-6"/></svg></button>
+      <button><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg>English <svg viewBox="0 0 24 24" style="width:10px;height:10px"><path d="m6 9 6 6 6-6"/></svg></button>
+    </div>
+  </div>
+</div>
+
+<!-- ================= HEADER ================= -->
+<header class="header" id="header">
+  <div class="container">
+    <button class="menu-btn icon" id="menuBtn" aria-label="Open menu" style="width:26px;height:26px;place-items:center">
+      <svg viewBox="0 0 24 24" style="width:24px;height:24px;stroke:var(--ink);fill:none;stroke-width:1.6"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+
+    <a href="#" class="logo" aria-label="Lumora home">
+      <svg class="mark" viewBox="0 0 40 34"><path d="M20 2c4 5 4 10 0 15-4-5-4-10 0-15Z" fill="#b85c6b"/><path d="M20 17c-6-1-12-4-16-10 6-1 12 1 16 10Z" fill="#c9707e"/><path d="M20 17c6-1 12-4 16-10-6-1-12 1-16 10Z" fill="#a24b5a"/><path d="M20 17c-4 5-9 8-14 9 2-6 7-10 14-9Z" fill="#d98c98" opacity=".7"/><path d="M20 17c4 5 9 8 14 9-2-6-7-10-14-9Z" fill="#c9707e" opacity=".7"/></svg>
+      <span class="word">LUMORA</span>
+      <span class="tag">Skin · Beauty · You</span>
+    </a>
+
+    <ul class="nav" id="nav">
+      <li><a href="#" class="active">Home</a></li>
+      <li>
+        <a href="#shop">Shop <svg viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg></a>
+        <div class="dropdown"><a href="#">Skincare</a><a href="#">Makeup</a><a href="#">Hair Care</a><a href="#">Body Care</a><a href="#">Fragrances</a><a href="#">Gift Sets</a></div>
+      </li>
+      <li>
+        <a href="#">Collections <svg viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg></a>
+        <div class="dropdown"><a href="#">New Arrivals</a><a href="#">Best Sellers</a><a href="#">Sale</a><a href="#">Glow Edit</a></div>
+      </li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+
+    <div class="icons">
+      <button aria-label="Search"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg></button>
+      <button aria-label="Account"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg></button>
+      <button aria-label="Wishlist"><svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-9.5-9.2C1.2 8.4 3.3 5 6.8 5c2 0 3.8 1.1 5.2 3C13.4 6.1 15.2 5 17.2 5c3.5 0 5.6 3.4 4.3 6.8C19.5 16.4 12 21 12 21Z"/></svg><span class="badge" id="wishCount">0</span></button>
+      <button aria-label="Open cart" id="cartBtn"><svg viewBox="0 0 24 24"><path d="M5 8h14l-1 12H6zM9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="badge" id="cartCount">0</span></button>
+    </div>
+  </div>
+</header>
+<div class="overlay" id="overlay"></div>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="hero" aria-roledescription="carousel">
+  <!-- Slides: swap each .bg with a real photo (see CSS comment) -->
+  <div class="slide s1"><div class="bg"></div></div>
+  <div class="slide s2 active"><div class="bg"></div></div>
+  <div class="slide s3"><div class="bg"></div></div>
+  <div class="slide s4"><div class="bg"></div></div>
+
+  <div class="hero-copy">
+    <span class="eyebrow">Premium Skincare &amp; Beauty</span>
+    <h1>Healthy Skin.<br>Confident You.</h1>
+    <p>Discover natural, effective and luxurious skincare products designed to bring out your natural glow.</p>
+    <a href="#shop" class="btn">Shop Now <svg viewBox="0 0 24 24"><path d="M4 12h16M14 6l6 6-6 6"/></svg></a>
+  </div>
+
+  <ul class="features">
+    <li><svg viewBox="0 0 32 32"><path d="M16 28V14M16 14c0-6 5-9 11-9 0 6-3 10-9 10l-2-1M16 18c0-4-3-7-8-7 0 4 2 7 6 7"/></svg>Natural<br>Ingredients</li>
+    <li><svg viewBox="0 0 32 32"><path d="M16 27C8 22 4 17 4 12a6 6 0 0 1 12-2 6 6 0 0 1 12 2c0 5-4 10-12 15Z"/><path d="M12 15h8M16 11v8" opacity=".0"/></svg>Cruelty<br>Free</li>
+    <li><svg viewBox="0 0 32 32"><path d="M16 4 6 8v8c0 6 4.500 10 10 12 5.500-2 10-6 10-12V8z"/><circle cx="16" cy="14" r="3"/><path d="M16 17v5"/></svg>Dermatologist<br>Approved</li>
+    <li><svg viewBox="0 0 32 32"><path d="M3 9h16v13H3zM19 13h6l4 4v5H19z"/><circle cx="9" cy="24" r="2"/><circle cx="24" cy="24" r="2"/></svg>Fast &amp; Free<br>Shipping</li>
+  </ul>
+
+  <button class="arrow prev" aria-label="Previous slide"><svg viewBox="0 0 24 24"><path d="m15 5-7 7 7 7"/></svg></button>
+  <button class="arrow next" aria-label="Next slide"><svg viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></svg></button>
+  <div class="dots" id="dots"></div>
+</section>
+
+<!-- ================= CATEGORIES ================= -->
+<section class="section categories" id="shop">
+  <div class="container" style="max-width:1160px">
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow">Shop by Category</span>
+        <h2>Find What Makes You Glow</h2>
+        <p>Explore our carefully curated categories for every beauty need.</p>
+      </div>
+      <a href="#" class="link-all">View All <svg viewBox="0 0 24 24"><path d="M4 12h16M14 6l6 6-6 6"/></svg></a>
+    </div>
+    <div class="cat-grid" id="catGrid"></div>
+  </div>
+</section>
+
+<!-- ================= PROMO ================= -->
+<div class="container" style="max-width:1240px">
+  <section class="promo">
+    <div class="promo-copy">
+      <span class="eyebrow">Limited Time Offer</span>
+      <h2>Up to 30% Off<br>Your Favorite Skincare</h2>
+      <p>Glow brighter, spend less. Because you deserve it.</p>
+      <a href="#" class="btn btn-light">Shop The Sale <svg viewBox="0 0 24 24"><path d="M4 12h16M14 6l6 6-6 6"/></svg></a>
+      <div class="promo-script" aria-hidden="true">Glow —<br>Naturally<svg viewBox="0 0 24 24" style="fill:none"><path d="M12 21s-7.5-4.6-9.5-9.2C1.2 8.4 3.3 5 6.8 5c2 0 3.8 1.1 5.2 3C13.4 6.1 15.2 5 17.2 5c3.5 0 5.6 3.4 4.3 6.8C19.5 16.4 12 21 12 21Z"/></svg></div>
+    </div>
+    <div class="promo-img" role="img" aria-label="Lumora Renewal Cream"></div>
+  </section>
+</div>
+
+<!-- ================= BEST SELLERS ================= -->
+<section class="sellers container">
+  <div class="sec-head">
+    <div>
+      <span class="eyebrow">Best Sellers</span>
+      <h2>Loved by Thousands</h2>
+      <p>These customer favorites are a must-have.</p>
+    </div>
+    <a href="#" class="btn-outline">View All Products <svg viewBox="0 0 24 24"><path d="M4 12h16M14 6l6 6-6 6"/></svg></a>
+  </div>
+  <div class="prod-grid" id="prodGrid"></div>
+</section>
+
+<!-- ================= TRUST STRIP ================= -->
+<section class="trust">
+  <div class="container">
+    <div class="trust-item">
+      <svg viewBox="0 0 40 40"><path d="M20 4 6 10v10c0 8 6 13 14 16 8-3 14-8 14-16V10z"/><path d="M13 20h14M20 14v12"/></svg>
+      <div><b>Free Shipping</b><span>On orders over $50</span></div>
+    </div>
+    <div class="trust-item">
+      <svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="14"/><path d="M14 20h12M21 15l5 5-5 5"/></svg>
+      <div><b>Easy Returns</b><span>15 days return policy</span></div>
+    </div>
+    <div class="trust-item">
+      <svg viewBox="0 0 40 40"><path d="M20 4 6 10v10c0 8 6 13 14 16 8-3 14-8 14-16V10z"/><path d="m14 20 5 5 8-9"/></svg>
+      <div><b>Secure Payment</b><span>100% secure checkout</span></div>
+    </div>
+    <div class="trust-item">
+      <svg viewBox="0 0 40 40"><path d="M8 24v-4a12 12 0 0 1 24 0v4"/><rect x="6" y="22" width="7" height="10" rx="3"/><rect x="27" y="22" width="7" height="10" rx="3"/><path d="M30 32c0 3-4 4-8 4"/></svg>
+      <div><b>24/7 Support</b><span>We're here to help</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="footer-grid">
+    <div>
+      <div class="logo-row">
+        <svg class="mark" viewBox="0 0 40 34"><path d="M20 2c4 5 4 10 0 15-4-5-4-10 0-15Z" fill="#e8a0ab"/><path d="M20 17c-6-1-12-4-16-10 6-1 12 1 16 10Z" fill="#d98c98"/><path d="M20 17c6-1 12-4 16-10-6-1-12 1-16 10Z" fill="#c9707e"/><path d="M20 17c-4 5-9 8-14 9 2-6 7-10 14-9Z" fill="#f0b8c0" opacity=".7"/><path d="M20 17c4 5 9 8 14 9-2-6-7-10-14-9Z" fill="#d98c98" opacity=".7"/></svg>
+        <div class="stack"><span class="logo word" style="font-family:var(--serif);font-size:26px;letter-spacing:.18em;display:block">LUMORA</span><span class="tag">Skin · Beauty · You</span></div>
+      </div>
+      <p class="about">Modern beauty for real life. Premium skincare, makeup and more — all in one place.</p>
+      <div class="socials">
+        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.500" cy="6.500" r=".8" fill="#fff"/></svg></a>
+        <a href="#" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M14 3v11.500a3.500 3.500 0 1 1-3.500-3.500M14 3c.3 2.500 2 4.200 5 4.500"/></svg></a>
+        <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8.500c0-.3.200-.5.500-.5Z"/></svg></a>
+        <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="m10 9 5 3-5 3z" fill="#fff"/></svg></a>
+        <a href="#" aria-label="Pinterest"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M11 8c-3 1-3 5 0 5 2 0 3-2 2-4M12 12l-2 8"/></svg></a>
+      </div>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <ul><li><a href="#">Home</a></li><li><a href="#">Shop</a></li><li><a href="#">Collections</a></li><li><a href="#">About Us</a></li><li><a href="#">Blog</a></li><li><a href="#">Contact</a></li></ul>
+    </div>
+    <div>
+      <h4>Customer Care</h4>
+      <ul><li><a href="#">Shipping Policy</a></li><li><a href="#">Returns &amp; Refunds</a></li><li><a href="#">Privacy Policy</a></li><li><a href="#">Terms &amp; Conditions</a></li><li><a href="#">FAQs</a></li></ul>
+    </div>
+    <div class="nl">
+      <h4>Join Our Newsletter</h4>
+      <p>Be the first to know about new arrivals, exclusive offers and more.</p>
+      <form class="nl-form" id="nlForm" novalidate>
+        <input type="email" id="nlEmail" placeholder="Enter your email address" aria-label="Email address">
+        <button type="submit">Subscribe</button>
+      </form>
+      <div class="nl-msg" id="nlMsg" role="status"></div>
+    </div>
+  </div>
+  <div class="copyright">
+    <span>© 2025 Lumora. All rights reserved.</span>
+    <span class="script">Beauty is a lifestyle <svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-9.5-9.2C1.2 8.4 3.3 5 6.8 5c2 0 3.8 1.1 5.2 3C13.4 6.1 15.2 5 17.2 5c3.5 0 5.6 3.4 4.3 6.8C19.5 16.4 12 21 12 21Z"/></svg></span>
+  </div>
+</footer>
+
+
+<div class="overlay" id="cartOverlay"></div>
+<aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart" aria-hidden="true">
+  <div class="cd-head">
+    <h2>Your Cart <span id="cdCount"></span></h2>
+    <button id="cdClose" aria-label="Close cart"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+  </div>
+  <div class="cd-ship" id="cdShip"></div>
+  <div class="cd-body" id="cdBody"></div>
+  <div class="cd-foot" id="cdFoot">
+    <div class="cd-row"><span>Subtotal</span><b id="cdSub">$0.00</b></div>
+    <div class="cd-row small"><span>Shipping</span><span id="cdShipCost">Calculated at checkout</span></div>
+    <button class="btn cd-checkout" id="cdCheckout">Checkout</button>
+    <button class="cd-clear" id="cdClear">Clear cart</button>
+  </div>
+</aside>
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
